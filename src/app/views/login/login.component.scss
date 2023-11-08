@@ -1,0 +1,26 @@
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background: radial-gradient(111.61% 67.08% at 50% 51.45%, #EDE7E3 0%, #82C0CC 33.62%, #16697A 88.01%);
+    
+}
+
+input{
+    background-color: transparent;
+}
+
+mat-card {
+    max-width: 400px;
+    margin: 2em auto;
+    text-align: center;
+  }
+  
+  mat-form-field {
+    display: block;
+  }
+
+
