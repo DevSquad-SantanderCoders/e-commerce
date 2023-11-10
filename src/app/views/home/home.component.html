@@ -1,1 +1,26 @@
-<p>home works!</p>
+<app-header></app-header>
+<app-carousel></app-carousel>
+<main class="main">
+  <section class="products">
+    <h3>Our Products</h3>
+    <div class="products-wrapper">
+      <ng-container *ngFor="let product of products">
+        <div class="product-item">
+          <img src="{{ product.urlImg }}" />
+          <div class="infos-product">
+            <h4>{{ product.name }}</h4>
+            <div class="infos-price-product">
+              <span>
+                {{ product.price | currency : "BRL" }}
+              </span>
+              <span>
+                Em até
+                {{ product.installment[product.installment.length - 1] }}X
+              </span>
+            </div>
+          </div>
+        </div>
+      </ng-container>
+    </div>
+  </section>
+</main>

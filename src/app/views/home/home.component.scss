@@ -1,0 +1,60 @@
+@import '../../../styles.scss';
+
+.main {
+
+  width: 100vw;
+  height: 100vh;
+
+}
+.products-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 20px;
+
+}
+.products {
+  padding: 25px;
+}
+
+.products h3 {
+  text-align: center;
+  font-family: $tech-text;
+  color:$primary-color;
+  font-weight: 800;
+
+}
+
+.product-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  // border: solid 2px saddlebrown;
+}
+
+.product-item img {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+}
+
+.infos-product {
+  display: flex;
+  flex-direction: column;
+
+}
+.infos-product h4 {
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.infos-price-product{
+  display: flex;
+  justify-content: space-between;
+}
+
+.infos-price-product span {
+  font-size: 15px;
+
+}

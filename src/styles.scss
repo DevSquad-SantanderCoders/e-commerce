@@ -1,8 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
-
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;800&display=swap');
+$primary-color: #16697A;
+$secondary-color: #489FB5;
+$tertiary-color: #82C0CC;
+$primary-grey: #EDE7E3;
+$primary-yellow: #FFA62B;
+$tech-text: 'Orbitron', sans-serif;
 html,
 body {
     height: 100%;
+    background: linear-gradient(0.25turn, $primary-color, $primary-grey, $tertiary-color);
+    overflow-x: hidden;
 }
 
 body {
@@ -13,3 +21,5 @@ body {
 .mdc-text-field--filled:not(.mdc-text-field--disabled){
     background-color: transparent !important;
   }
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';

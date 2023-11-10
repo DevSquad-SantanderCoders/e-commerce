@@ -1,0 +1,49 @@
+@import '../../../styles.scss';
+
+.carousel  {
+  height: 40vh;
+  width: 100%;
+}
+
+.carousel-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0;
+}
+
+.picsum-img-wrapper{
+  height: 40vh;
+  width: 100%;
+}
+
+img {
+  background-position: center;
+  object-fit: cover;
+  height: inherit;
+  width: 100%;
+}
+
+div.carousel-indicators{
+  border: solid 4px red;
+  position: absolute;
+  top: 0;
+}
+
+.carousel-caption {
+  left: 20px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.carousel-caption h3 {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 900;
+  color: $primary-grey;
+}
+
+

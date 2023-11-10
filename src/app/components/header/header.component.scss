@@ -1,0 +1,43 @@
+
+@import '../../../styles.scss';
+
+.mat-toolbar {
+  background-color: $primary-color;
+  color: $primary-yellow;
+  // padding: 10px 0px 0px;
+}
+a {
+  font-family: $tech-text;
+}
+
+nav {
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+}
+
+ul {
+  display: flex;
+  gap: 8px;
+  padding: 24px 0px 0px 0px;
+}
+li {
+  list-style: none;
+}
+
+.user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user p {
+  margin: -10px;
+  font-size: 10px;
+}
+
+.log-icon {
+  margin-top:0;
+}
