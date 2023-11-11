@@ -23,6 +23,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { AddComponent } from './views/add/add.component';
 import { HomeComponent } from './views/home/home.component';
 import { LoginComponent } from './views/login/login.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 registerLocaleData(ptBr);
 
@@ -34,6 +35,7 @@ registerLocaleData(ptBr);
     LoginComponent,
     CarouselComponent,
     HeaderComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

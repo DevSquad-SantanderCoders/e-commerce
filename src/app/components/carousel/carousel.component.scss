@@ -25,25 +25,58 @@ img {
 }
 
 div.carousel-indicators{
-  border: solid 4px red;
   position: absolute;
   top: 0;
 }
 
 .carousel-caption {
-  left: 20px;
-  padding: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 90%;
+  width: 100%;
+  align-items: center;
+  left: 0px;
 }
 
 .carousel-caption h3 {
-  text-align: center;
-  font-size: 26px;
+  font-size: 22px;
   font-weight: 900;
   color: $primary-grey;
+  backdrop-filter: blur(5px) saturate(70%);
+  width: fit-content;
+  border-radius: 20px;
+}
+.carousel-caption p {
+  backdrop-filter: blur(5px) saturate(70%);
+  font-weight: 900;
+  width: fit-content;
+  font-size: 11px;
+}
+
+@media only screen and (max-width: 550px) and (min-width: 500px){
+
+  .carousel-caption p  {
+    font-size: 15px;
+  }
+  .carousel-caption h3  {
+    font-size: 28px ;
+  }
 }
 
 
+@media only screen and (max-width: 1024px) and (min-width: 550px)  {
+  .carousel-caption p  {
+    font-size: 20px;
+  }
+  .carousel-caption h3  {
+    font-size: 37px ;
+  }
+}
+@media only screen and (max-width: 1280px) and (min-width: 1024px)  {
+  .carousel-caption p  {
+    font-size: 22px;
+  }
+  .carousel-caption h3  {
+    font-size: 45px ;
+  }
+}

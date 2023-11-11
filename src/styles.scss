@@ -1,15 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;800&display=swap');
-$primary-color: #16697A;
-$secondary-color: #489FB5;
-$tertiary-color: #82C0CC;
-$primary-grey: #EDE7E3;
-$primary-yellow: #FFA62B;
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;800&family=Oswald:wght@600&display=swap');
+$primary-color: #2A0052;
+$secondary-color: #6644A6;
+$tertiary-color: #140004;
+$primary-grey: #E4DEF7;
+$primary-blue: #62A1E4;
 $tech-text: 'Orbitron', sans-serif;
+$product-text: 'Oswald', sans-serif;
 html,
 body {
     height: 100%;
-    background: linear-gradient(0.25turn, $primary-color, $primary-grey, $tertiary-color);
+    background: radial-gradient(ellipse at center, #6644A6 0%, #E4DEF7 0%, #6644A6 100%);
     overflow-x: hidden;
 }
 

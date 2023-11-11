@@ -3,11 +3,12 @@
 
 .mat-toolbar {
   background-color: $primary-color;
-  color: $primary-yellow;
+  color: $primary-grey;
   // padding: 10px 0px 0px;
 }
-a {
+span {
   font-family: $tech-text;
+  filter: drop-shadow(0 0 0.75rem $primary-grey);
 }
 
 nav {
@@ -20,7 +21,7 @@ nav {
 
 ul {
   display: flex;
-  gap: 8px;
+  gap: 5px;
   padding: 24px 0px 0px 0px;
 }
 li {
@@ -40,4 +41,19 @@ li {
 
 .log-icon {
   margin-top:0;
+}
+.user{
+  right: 0;
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 500px){
+
+  nav  {
+    justify-content: space-around;
+  }
+  ul {
+    gap: 20px ;
+  }
+
+
 }

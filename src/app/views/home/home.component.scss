@@ -1,9 +1,9 @@
 @import '../../../styles.scss';
 
 .main {
-
   width: 100vw;
-  height: 100vh;
+  height: 600px;
+  overflow-y: auto;
 
 }
 .products-wrapper {
@@ -12,6 +12,7 @@
   flex-wrap: wrap;
   width: 100%;
   gap: 20px;
+  padding: 20px 15px;
 
 }
 .products {
@@ -23,6 +24,7 @@
   font-family: $tech-text;
   color:$primary-color;
   font-weight: 800;
+  margin-bottom: 20px;
 
 }
 
@@ -30,10 +32,12 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  font-family: $product-text;
   // border: solid 2px saddlebrown;
 }
 
 .product-item img {
+  border-radius: 50%;
   height: 150px;
   width: 150px;
   object-fit: cover;
@@ -47,14 +51,17 @@
 .infos-product h4 {
   text-transform: capitalize;
   text-align: center;
+  font-family: $product-text;
+  color: $tertiary-color;
+  font-size: 15px;
 }
 
 .infos-price-product{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .infos-price-product span {
-  font-size: 15px;
+  font-size: 12px;
 
 }
