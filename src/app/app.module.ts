@@ -24,6 +24,8 @@ import { AddComponent } from './views/add/add.component';
 import { HomeComponent } from './views/home/home.component';
 import { LoginComponent } from './views/login/login.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { HttpClientModule } from '@angular/common/http';
+
 
 registerLocaleData(ptBr);
 
@@ -54,6 +56,8 @@ registerLocaleData(ptBr);
     MatSelectModule,
     MatOptionModule,
     NgbModule,
+    HttpClientModule,
+
   ],
   providers: [{ provide: LOCALE_ID, useValue: 'pt' }],
   bootstrap: [AppComponent],
