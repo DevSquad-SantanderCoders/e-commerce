@@ -1,0 +1,82 @@
+@import '../../../styles.scss';
+
+.carousel  {
+  height: 40vh;
+  width: 100%;
+}
+
+.carousel-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0;
+}
+
+.picsum-img-wrapper{
+  height: 40vh;
+  width: 100%;
+}
+
+img {
+  background-position: center;
+  object-fit: cover;
+  height: inherit;
+  width: 100%;
+}
+
+div.carousel-indicators{
+  position: absolute;
+  top: 0;
+}
+
+.carousel-caption {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  left: 0px;
+}
+
+.carousel-caption h3 {
+  font-size: 22px;
+  font-weight: 900;
+  color: $primary-grey;
+  backdrop-filter: blur(5px) saturate(70%);
+  width: fit-content;
+  border-radius: 20px;
+}
+.carousel-caption p {
+  backdrop-filter: blur(5px) saturate(70%);
+  font-weight: 900;
+  width: fit-content;
+  font-size: 11px;
+}
+
+@media only screen and (max-width: 550px) and (min-width: 500px){
+
+  .carousel-caption p  {
+    font-size: 15px;
+  }
+  .carousel-caption h3  {
+    font-size: 28px ;
+  }
+}
+
+
+@media only screen and (max-width: 1024px) and (min-width: 550px)  {
+  .carousel-caption p  {
+    font-size: 20px;
+  }
+  .carousel-caption h3  {
+    font-size: 37px ;
+  }
+}
+@media only screen and (max-width: 1280px) and (min-width: 1024px)  {
+  .carousel-caption p  {
+    font-size: 22px;
+  }
+  .carousel-caption h3  {
+    font-size: 45px ;
+  }
+}
