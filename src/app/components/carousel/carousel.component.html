@@ -1,0 +1,29 @@
+<ngb-carousel *ngIf="images" class="carousel">
+  <ng-template ngbSlide class="carousel-item">
+    <div class="picsum-img-wrapper">
+      <img [src]="images[0].src" alt="Random first slide" />
+    </div>
+    <div class="carousel-caption">
+      <h3>Potencialize sua experiência</h3>
+      <p>Encontre os melhores periféricos para o seu setup.</p>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide class="carousel-item">
+    <div class="picsum-img-wrapper">
+      <img [src]="images[1].src" alt="Random second slide" />
+    </div>
+    <div class="carousel-caption">
+      <h3>Explore a próxima geração de periféricos</h3>
+      <p>Qualidade e desempenho em um só lugar.</p>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide class="carousel-item">
+    <div class="picsum-img-wrapper">
+      <img [src]="images[2].src" alt="Random third slide" />
+    </div>
+    <div class="carousel-caption">
+      <h3>Aprimore sua produtividade</h3>
+      <p>Descubra nossa seleção de periféricos premium.</p>
+    </div>
+  </ng-template>
+</ngb-carousel>
