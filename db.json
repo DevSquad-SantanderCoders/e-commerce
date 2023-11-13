@@ -1,10 +1,18 @@
 {
     "products": [
-
-
- ],
- "usuarios": [
-
-
- ]
+        {
+            "nome": "teclado",
+            "descricao": "teclado mecanico",
+            "codigo": "123abc",
+            "preco": "200",
+            "parcelamento": [
+                "2x",
+                "3x",
+                "4x",
+                "5x"
+            ],
+            "urlImagem": ""
+        }
+    ],
+    "usuarios": []
 }
