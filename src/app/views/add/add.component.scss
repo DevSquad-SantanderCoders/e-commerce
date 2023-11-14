@@ -1,22 +1,25 @@
-.container {
+@import '../../../styles.scss';
+
+.containerProduct {
     height: 100vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;  
+    align-items: center;
     background: radial-gradient(ellipse at center, #6644A6 0%, #E4DEF7 0%, #6644A6 100%);
 }
 
-h2{
+h2 {
     font-size: 34px;
     color: #f1eefb;
     position: relative;
     top: -20px;
     letter-spacing: 1px;
+    font-family: $tech-text;
 }
 
-.container-form{    
+.container-form {
     width: 60%;
     height: 70%;
     padding: 20px;
@@ -28,19 +31,32 @@ h2{
 
 .form {
     display: flex;
-    flex-direction: column;  
-    justify-content: center;  
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     height: 100%;
     color: #f1eefb;
 }
 
-.div-form{
+.div-form {
     display: flex;
-    gap: 150px;
     align-items: center;
     width: 100%;
-    height: 100%;
+    flex-direction: column;
+    overflow-y: scroll;
+    height: 80%;
+    gap: 30px !important;
+}
+
+::-webkit-scrollbar {
+    background-color: #f1eefbb3;
+    border-radius: 10px;
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #569be5bf;
 }
 
 .section-form {
@@ -51,11 +67,11 @@ h2{
     gap: 40px;
 }
 
-button{
-    width: 15%;
+button {
+    width: 34%;
     height: 30px;
     font-size: 14px;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     font-weight: 600;
     border: none;
     background-color: #2a0052;
@@ -63,10 +79,10 @@ button{
     cursor: pointer;
     color: #f1eefb;
     position: relative;
-    bottom: -8px;
+    bottom: -34px;
 }
 
-button:hover{
+button:hover {
     background-color: #6644a6;
     color: #f1eefb;
     transform: scale(1.1);
@@ -74,7 +90,7 @@ button:hover{
     box-shadow: 0px 0px 6px 2px #569be5;
 }
 
-.icon-input{   
+.icon-input {
     display: flex;
     align-items: center;
     position: relative;
@@ -82,14 +98,14 @@ button:hover{
     color: #f1eefb;
 }
 
-.icon{
+.icon {
     background: radial-gradient(ellipse at center, #6644a660 0%, #00000079 0%, #6644a681 100%);
     border-radius: 5px;
     position: relative;
     top: -10px;
 }
 
-.icon-img{
+.icon-img {
     background: radial-gradient(ellipse at center, #6644a660 0%, #00000079 0%, #6644a681 100%);
     border-radius: 5px;
     position: relative;
@@ -97,48 +113,47 @@ button:hover{
 }
 
 
-@media only screen and (max-width: 1020px){
+@media only screen and (min-width: 1020px) {
     .div-form {
-        flex-direction: column;
-        overflow-y: scroll;
-        height: 80%;
-        gap: 30px !important;
+        height: 100%;
+        gap: 150px;  
+        flex-direction: row;    
     }
 
-    ::-webkit-scrollbar{
-        background-color: #f1eefbb3;
-        border-radius: 10px;
-        width: 12px;
-    }
-
-    ::-webkit-scrollbar-thumb{
-        border-radius: 10px;
-        background-color: #569be5bf;
-    }
-
-    button{
-        bottom: -45px;
-    }
-}
-
-
-@media only screen and (max-width: 1000px) {
     button {
-        width: 20%;
+        bottom: -2px;
+        width: 24% !important; 
+        height: 35px;
     }
 }
 
-@media only screen and (max-width: 690px) {
+
+@media only screen and (min-width: 1000px) {
     button {
-        width: 25%;
+        width: 26%;
     }
 }
 
-@media only screen and (max-width: 580px) {
+@media only screen and (min-width: 700px) {
     button {
-        width: 28%;
+        width: 30%;
     }
 }
 
+@media only screen and (min-width: 1300px) {
+    button {
+        width: 22% !important;
+    }
+}
 
- 
+@media only screen and (min-width: 1920px) {
+    button {
+        width: 18% !important;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    button {
+        width: 20% !important;
+    }
+}
