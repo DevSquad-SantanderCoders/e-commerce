@@ -25,6 +25,7 @@ import { HomeComponent } from './views/home/home.component';
 import { LoginComponent } from './views/login/login.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ListarProdutosComponent } from './views/listarProdutos/listar-produtos.component';
 
 
 registerLocaleData(ptBr);
@@ -38,6 +39,7 @@ registerLocaleData(ptBr);
     CarouselComponent,
     HeaderComponent,
     FooterComponent,
+    ListarProdutosComponent,
   ],
   imports: [
     BrowserModule,
