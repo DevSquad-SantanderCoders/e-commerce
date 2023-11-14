@@ -117,13 +117,17 @@ button:hover {
     .div-form {
         height: 100%;
         gap: 150px;  
-        flex-direction: row;    
+        flex-direction: row;   
     }
 
     button {
         bottom: -2px;
         width: 24% !important; 
         height: 35px;
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
     }
 }
 
