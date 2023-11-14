@@ -1,3 +1,5 @@
+@import "../../../styles.scss";
+
 main {
     width: 100vw;
     height: 100vh;
@@ -5,7 +7,7 @@ main {
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    background: radial-gradient(111.61% 67.08% at 50% 51.45%, #EDE7E3 0%, #82C0CC 33.62%, #16697A 88.01%);
+    background-color: $primary-blue;
     
 }
 
