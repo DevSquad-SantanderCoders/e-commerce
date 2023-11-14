@@ -2,11 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;800&family=Oswald:wght@600&display=swap');
 $primary-color: #2A0052;
 $secondary-color: #6644A6;
-$tertiary-color: #140004;
+$tertiary-color: #150233;
 $primary-grey: #E4DEF7;
 $primary-blue: #62A1E4;
 $tech-text: 'Orbitron', sans-serif;
 $product-text: 'Oswald', sans-serif;
+$secondary-blue: #569be5;
+$opaque-blue: #569be5bf;
 html,
 body {
     height: 100%;
@@ -29,7 +31,7 @@ body {
 }
 
 
-  
+
 /* Importing Bootstrap SCSS file. */
 @import 'bootstrap/scss/bootstrap';
 
