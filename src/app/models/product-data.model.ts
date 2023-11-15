@@ -1,8 +1,10 @@
 export interface IProduct {
   name: string;
-  description: string;
+  brand: string;
   code: string;
   price: number;
   installment: number[];
   urlImg: string;
+  sale: boolean;
+  promotionalPrice?: number;
 }

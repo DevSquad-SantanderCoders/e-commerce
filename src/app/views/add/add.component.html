@@ -1,69 +1,92 @@
-<div class="containerProduct">
-    <h2>Adicionar novo produto</h2>
-    <section class="container-form">
-        <form class="form">
-            <div class="div-form">
-                <section class="section-form">
+<div
+  [ngClass]="[
+    'containerProduct',
+    editProduct ? 'containerEdit' : 'containerAdd'
+  ]"
+>
+  <section class="form-top">
+    <h2>{{ editProduct ? "Editar Produto" : "Adicionar novo produto" }}</h2>
+    <button
+    *ngIf="editProduct"
+    (click)="closeModal()"
+      mat-flat-button
+      color="primary"
+      class="btn-close-dialog"
+    >
+      <mat-icon>close</mat-icon>
+    </button>
+  </section>
 
-                    <section class="icon-input">
-                        <mat-icon class="icon">store</mat-icon>
-                        <mat-form-field>
-                            <mat-label class="input label">Produto</mat-label>
-                            <input class="input" matInput>
-                        </mat-form-field>
-                    </section>
+  <section
+    [ngClass]="[
+      'container-form',
+      editProduct ? 'container-form-edit' : 'container-form-add'
+    ]"
+  >
+    <form class="form">
+      <div
+        [ngClass]="['div-form', editProduct ? 'div-form-edit' : 'div-form-add']"
+      >
+        <section class="section-form">
+          <section class="icon-input">
+            <mat-icon class="icon">store</mat-icon>
+            <mat-form-field>
+              <mat-label class="input label">Produto</mat-label>
+              <input class="input" matInput />
+            </mat-form-field>
+          </section>
 
-                    <section class="icon-input">
-                        <mat-icon class="icon">comment</mat-icon>
-                        <mat-form-field>
-                            <mat-label class="label input">Descrição</mat-label>
-                            <input class="input" matInput>
-                        </mat-form-field>
-                    </section>
+          <section class="icon-input">
+            <mat-icon class="icon">comment</mat-icon>
+            <mat-form-field>
+              <mat-label class="label input">Descrição</mat-label>
+              <input class="input" matInput />
+            </mat-form-field>
+          </section>
 
-                    <section class="icon-input">
-                        <mat-icon class="icon">view_week</mat-icon>
-                        <mat-form-field>
-                            <mat-label class="label input">Código</mat-label>
-                            <input class="input" matInput>
-                        </mat-form-field>
-                    </section>
+          <section class="icon-input">
+            <mat-icon class="icon">view_week</mat-icon>
+            <mat-form-field>
+              <mat-label class="label input">Código</mat-label>
+              <input class="input" matInput />
+            </mat-form-field>
+          </section>
+        </section>
 
-                </section>
+        <section class="section-form">
+          <section class="icon-input">
+            <mat-icon class="icon"> attach_money</mat-icon>
+            <mat-form-field>
+              <mat-label class="label input">Preço</mat-label>
+              <input class="input" matInput />
+            </mat-form-field>
+          </section>
 
-                <section class="section-form">
+          <section class="icon-input">
+            <mat-icon class="icon">credit_card</mat-icon>
+            <mat-form-field>
+              <mat-label class="label input">Parcelamento</mat-label>
+              <mat-select class="input">
+                <mat-option value="/2">2x</mat-option>
+                <mat-option value="/3">3x</mat-option>
+                <mat-option value="/4">4x</mat-option>
+                <mat-option value="/5">5x</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </section>
 
-                    <section class="icon-input">
-                        <mat-icon class="icon"> attach_money</mat-icon>
-                        <mat-form-field>
-                            <mat-label class="label input">Preço</mat-label>
-                            <input class="input" matInput>
-                        </mat-form-field>
-                    </section>
-
-                    <section class="icon-input">
-                        <mat-icon class="icon">credit_card</mat-icon>
-                        <mat-form-field>
-                            <mat-label class="label input">Parcelamento</mat-label>
-                            <mat-select  class="input">
-                                <mat-option value="/2">2x</mat-option>
-                                <mat-option value="/3">3x</mat-option>
-                                <mat-option value="/4">4x</mat-option>
-                                <mat-option value="/5">5x</mat-option>
-                            </mat-select>
-                        </mat-form-field>
-                    </section>
-
-                    <section class="icon-input">
-                        <mat-icon class="icon-img fa-image">image</mat-icon>
-                        <mat-form-field>
-                            <mat-label class="label input">Link da imagem</mat-label>
-                            <textarea  class="input" matInput placeholder="URL..."></textarea>
-                        </mat-form-field>
-                    </section>
-                </section>
-            </div>
-            <button>Adicionar</button>
-        </form>
-    </section>
+          <section class="icon-input">
+            <mat-icon class="icon-img fa-image">image</mat-icon>
+            <mat-form-field>
+              <mat-label class="label input">Link da imagem</mat-label>
+              <textarea class="input" matInput placeholder="URL..."></textarea>
+            </mat-form-field>
+          </section>
+        </section>
+      </div>
+      <button class="btn-action">
+        {{ editProduct ? "Editar" : "Adicionar" }}
+      </button>
+    </form>
+  </section>
 </div>
