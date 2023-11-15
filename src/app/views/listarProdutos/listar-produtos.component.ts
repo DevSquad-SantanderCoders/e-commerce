@@ -3,7 +3,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { DeleteProductFormComponent } from 'src/app/modais/delete-product-form/delete-product-form.component';
 import { EditProductFormComponent } from 'src/app/modais/edit-product-form/edit-product-form.component';
 import { IProduct } from 'src/app/models/product-data.model';
-import { ProductService } from 'src/app/services/products.service';
+import { ProductService } from 'src/app/services/product.service';
 
 @Component({
   selector: 'app-listar-produtos',
@@ -59,4 +59,5 @@ export class ListarProdutosComponent {
       }
     });
   }
+
 }
