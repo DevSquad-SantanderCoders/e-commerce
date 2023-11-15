@@ -3,7 +3,7 @@ import { HttpClientModule } from '@angular/common/http';
 import ptBr from '@angular/common/locales/pt';
 import { LOCALE_ID, NgModule } from '@angular/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatOptionModule } from '@angular/material/core';
@@ -25,18 +25,18 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 import { DeleteProductFormComponent } from './modais/delete-product-form/delete-product-form.component';
 import { EditProductFormComponent } from './modais/edit-product-form/edit-product-form.component';
-import { AddComponent } from './views/add/add.component';
 import { HomeComponent } from './views/home/home.component';
 import { ListarProdutosComponent } from './views/listarProdutos/listar-produtos.component';
 import { LoginComponent } from './views/login/login.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { AddComponent } from './views/add/add.component';
 
 registerLocaleData(ptBr);
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
-    AddComponent,
+    HomeComponent,   
     LoginComponent,
     CarouselComponent,
     HeaderComponent,
@@ -44,6 +44,7 @@ registerLocaleData(ptBr);
     ListarProdutosComponent,
     EditProductFormComponent,
     DeleteProductFormComponent,
+    AddComponent
   ],
   imports: [
     BrowserModule,
@@ -61,9 +62,11 @@ registerLocaleData(ptBr);
     MatSlideToggleModule,
     MatSelectModule,
     MatOptionModule,
+    MatFormFieldModule,
     NgbModule,
     HttpClientModule,
     MatDialogModule,
+    ReactiveFormsModule,
   ],
   providers: [{ provide: LOCALE_ID, useValue: 'pt' }],
   bootstrap: [AppComponent],

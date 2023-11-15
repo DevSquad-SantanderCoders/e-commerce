@@ -23,7 +23,7 @@
       editProduct ? 'container-form-edit' : 'container-form-add'
     ]"
   >
-    <form class="form">
+    <form [formGroup]="productForm" class="form">
       <div
         [ngClass]="['div-form', editProduct ? 'div-form-edit' : 'div-form-add']"
       >
@@ -32,15 +32,15 @@
             <mat-icon class="icon">store</mat-icon>
             <mat-form-field>
               <mat-label class="input label">Produto</mat-label>
-              <input class="input" matInput />
+              <input formControlName="nome" class="input" matInput />
             </mat-form-field>
           </section>
 
           <section class="icon-input">
             <mat-icon class="icon">comment</mat-icon>
             <mat-form-field>
-              <mat-label class="label input">Descrição</mat-label>
-              <input class="input" matInput />
+              <mat-label class="label input">Marca</mat-label>
+              <input formControlName="marca" class="input" matInput />
             </mat-form-field>
           </section>
 
@@ -48,7 +48,7 @@
             <mat-icon class="icon">view_week</mat-icon>
             <mat-form-field>
               <mat-label class="label input">Código</mat-label>
-              <input class="input" matInput />
+              <input formControlName="codigo" class="input" matInput />
             </mat-form-field>
           </section>
         </section>
@@ -58,7 +58,7 @@
             <mat-icon class="icon"> attach_money</mat-icon>
             <mat-form-field>
               <mat-label class="label input">Preço</mat-label>
-              <input class="input" matInput />
+              <input formControlName="preco" class="input" matInput />
             </mat-form-field>
           </section>
 
@@ -66,7 +66,7 @@
             <mat-icon class="icon">credit_card</mat-icon>
             <mat-form-field>
               <mat-label class="label input">Parcelamento</mat-label>
-              <mat-select class="input">
+              <mat-select formControlName="parcelas" class="input">
                 <mat-option value="/2">2x</mat-option>
                 <mat-option value="/3">3x</mat-option>
                 <mat-option value="/4">4x</mat-option>
@@ -79,12 +79,12 @@
             <mat-icon class="icon-img fa-image">image</mat-icon>
             <mat-form-field>
               <mat-label class="label input">Link da imagem</mat-label>
-              <textarea class="input" matInput placeholder="URL..."></textarea>
+              <textarea formControlName="urlIMG" class="input" matInput placeholder="URL..."></textarea>
             </mat-form-field>
           </section>
         </section>
       </div>
-      <button class="btn-action">
+      <button (click)="onSubmit()" class="btn-action">
         {{ editProduct ? "Editar" : "Adicionar" }}
       </button>
     </form>
