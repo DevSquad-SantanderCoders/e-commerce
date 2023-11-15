@@ -1,0 +1,16 @@
+<h1 mat-dialog-title>Excluir Produto</h1>
+<div mat-dialog-content>
+  <p>
+    Você tem certeza que deseja excluir o produto {{ currentProduct.name }} da
+    marca {{ currentProduct.brand }} ?
+  </p>
+  <div mat-dialog-actions class="btn-delete-actions">
+    <button mat-flat-button (click)="onCancel()">Cancelar</button>
+    <button mat-flat-button (click)="deleteProduct()" color="primary">
+      Excluir
+    </button>
+  </div>
+  <p *ngIf="actionCompleted">
+    {{ notExcludedProduct ? "Produto não excluído" : "Produto excluído" }}
+  </p>
+</div>
