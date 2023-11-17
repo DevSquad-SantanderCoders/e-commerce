@@ -2,16 +2,29 @@
   <mat-toolbar class="toolbar-header">
     <mat-toolbar-row>
       <nav>
-        <span> PeriTech </span>
+        <a [routerLink]="['/']">
+          <span> PeriTech </span>
+        </a>
         <ul>
           <li>
-            <mat-icon>add</mat-icon>
+            <a [routerLink]="['/add']">
+              <mat-icon>add</mat-icon>
+            </a>
           </li>
           <li>
-            <mat-icon>people</mat-icon>
+            <a [routerLink]="['/listarProdutos']">
+              <mat-icon>computer</mat-icon>
+            </a>
           </li>
           <li>
-            <mat-icon>email</mat-icon>
+            <a>
+              <mat-icon>people</mat-icon>
+            </a>
+          </li>
+          <li>
+            <a>
+              <mat-icon>email</mat-icon>
+            </a>
           </li>
         </ul>
         <div class="user">
