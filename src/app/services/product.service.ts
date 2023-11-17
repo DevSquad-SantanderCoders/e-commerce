@@ -8,23 +8,29 @@ import { environment } from '../environment/environment';
   providedIn: 'root',
 })
 export class ProductService {
-
+  private maxId = 5;
   constructor(private http: HttpClient) {}
 
-
   getProducts(): Observable<any> {
-    return this.http.get(environment.URL + '/products')
-  } 
 
-  createProducts(product: IProduct): Observable<any>  {
-    return this.http.post(environment.URL + '/products', product)
+        return this.http.get(environment.URL + '/products');
   }
 
-  editProducts(product: IProduct): Observable<any>  {
-    return this.http.put(environment.URL + `/products/${product.code}`, product)
+  createProducts(product: IProduct): Observable<any> {
+    const productId = { ...product, id: this.maxId };
+    this.maxId++;
+    return this.http.post(environment.URL + '/products', productId);
   }
 
-  deleteProducts(product: IProduct): Observable<any>  {
-    return this.http.delete(environment.URL + `/products/${product.code}`)
+  editProducts(product: IProduct): Observable<any> {
+    return this.http.put(
+      environment.URL + `/products/${product.code}`,
+      product
+    );
+  }
+
+  deleteProducts(product: IProduct): Observable<any> {
+    return this.http.delete(environment.URL + `/products/${product.code}`);
+
   }
 }
