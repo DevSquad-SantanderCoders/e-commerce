@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { IProduct } from '../models/product-data.model';
+import { environment } from '../environment/environment';
 
 @Injectable({
   providedIn: 'root',
@@ -12,18 +13,18 @@ export class ProductService {
 
 
   getProducts(): Observable<any> {
-    return this.http.get('http://localhost:3000/products')
-  }
+    return this.http.get(environment.URL + '/products')
+  } 
 
   createProducts(product: IProduct): Observable<any>  {
-    return this.http.post('http://localhost:3000/products', product)
+    return this.http.post(environment.URL + '/products', product)
   }
 
   editProducts(product: IProduct): Observable<any>  {
-    return this.http.put(`http://localhost:3000/products/${product.code}`, product)
+    return this.http.put(environment.URL + `/products/${product.code}`, product)
   }
 
   deleteProducts(product: IProduct): Observable<any>  {
-    return this.http.delete(`http://localhost:3000/products/${product.code}`)
+    return this.http.delete(environment.URL + `/products/${product.code}`)
   }
 }
