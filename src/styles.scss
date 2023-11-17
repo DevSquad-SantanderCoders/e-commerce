@@ -30,6 +30,10 @@ body {
     color: #f1eefb;
 }
 
+.mdc-text-field--filled.mdc-text-field--disabled {
+    background-color: transparent !important;
+}
+
 
 
 /* Importing Bootstrap SCSS file. */

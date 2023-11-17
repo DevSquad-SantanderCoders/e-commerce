@@ -22,9 +22,9 @@ export class AddComponent {
     private serviceproduct: ProductService,
     private router: Router
   ) {
-    // this.serviceproduct.getProducts().subscribe((res) => {
-    //   this.products = res;
-    // });
+    this.serviceproduct.getProducts().subscribe((res) => {
+      this.products = res;
+    });
   }
 
   ngOnInit() {
@@ -42,32 +42,35 @@ export class AddComponent {
         [Validators.required],
       ],
       id: [
-        product?.id ?? '',
-        [Validators.required, Validators.minLength(1)],
+        { value: product?.id ?? '', disabled: this.editProduct },
+        [Validators.required, Validators.minLength(3)],
       ],
-      preco: [product?.price ?? '', [Validators.required]],
-      parcelas: [product?.installment ?? '', [Validators.required]],
-      urlIMG: [product?.urlImg ?? '', [Validators.required, Validators.minLength(2)]],
+      price: [product?.price ?? '', [Validators.required]],
+      installment: [product?.installment ?? '', [Validators.required]],
+      urlImg: [product?.urlImg ?? '', [Validators.required]],
     });
   }
 
   public onSubmit(): void {
     if (this.editProduct) {
-      this.serviceproduct.editProducts(this.productForm.value).subscribe((res) => {
-        this.fecharModal.emit(true)
-      });
-    } else {      
-      console.log('form value',this.productForm.value);
-      this.serviceproduct.createProducts(this.productForm.value).subscribe((res) => {
-        console.log('foi produtos',this.products);
-        this.router.navigate(['/listar-produtos']);
-      });
+      this.productForm.get('id')?.enable();
+      this.serviceproduct
+        .editProducts(this.productForm.value)
+        .subscribe((res) => {
+          this.fecharModal.emit(true);
+        });
+    } else {
+      this.serviceproduct
+        .createProducts(this.productForm.value)
+        .subscribe((res) => {
+          this.router.navigate(['/listarProdutos']);
+        });
     }
   }
 
   public onCancel(): void {
     if (this.editProduct) {
-      this.fecharModal.emit(true);
+      this.fecharModal.emit(false);
     } else {
       this.router.navigate(['/listarProdutos']);
     }

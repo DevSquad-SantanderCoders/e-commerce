@@ -11,14 +11,14 @@ import { ProductService } from 'src/app/services/product.service';
   styleUrls: ['./listar-produtos.component.scss'],
 })
 export class ListarProdutosComponent {
+  products!: IProduct[];
   constructor(
     private serviceProducts: ProductService,
     private dialog: MatDialog
   ) {
-    console.log(this.getProducts());
+    this.getProducts();
   }
 
-  products!: IProduct[];
   getProducts() {
     this.serviceProducts.getProducts().subscribe((res) => {
       if (res) {
@@ -35,13 +35,10 @@ export class ListarProdutosComponent {
       width: '100%',
       height: '70%',
       data: product,
-      // backdropClass: 'bdrop',
     });
 
-    dialogRef.afterClosed().subscribe((productUpdated: IProduct) => {
-      if (productUpdated) {
-        this.getProducts();
-      }
+    dialogRef.afterClosed().subscribe(() => {
+      this.getProducts();
     });
   }
 
@@ -51,13 +48,12 @@ export class ListarProdutosComponent {
       width: '70%',
       data: product,
     });
-    dialogRef.afterClosed().subscribe((productUpdated: IProduct) => {
-      if (productUpdated) {
+    dialogRef.afterClosed().subscribe((hasProduct: IProduct) => {
+      if (hasProduct) {
         this.serviceProducts.deleteProducts(product).subscribe((res) => {
           this.getProducts();
         });
       }
     });
   }
-
 }
