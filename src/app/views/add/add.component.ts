@@ -42,15 +42,15 @@ export class AddComponent {
       ],
       marca: [
         product?.brand ?? '',
-        [Validators.required, Validators.minLength(8)],
+        [Validators.required],
       ],
-      codigo: [
-        product?.code ?? '',
-        [Validators.required, Validators.minLength(3)],
+      id: [
+        product?.id ?? '',
+        [Validators.required, Validators.minLength(1)],
       ],
       preco: [product?.price ?? '', [Validators.required]],
       parcelas: [product?.installment ?? '', [Validators.required]],
-      urlIMG: [product?.urlImg ?? '', [Validators.required]],
+      urlIMG: [product?.urlImg ?? '', [Validators.required, Validators.minLength(2)]],
     });
   }
 
@@ -62,7 +62,6 @@ export class AddComponent {
     } else {      
       console.log('form value',this.productForm.value);
       this.serviceproduct.createProducts(this.productForm.value).subscribe((res) => {
-        this.products.push(res) 
         console.log('foi produtos',this.products);
         this.router.navigate(['/listar-produtos']);
       });

@@ -48,7 +48,7 @@
             <mat-icon class="icon">view_week</mat-icon>
             <mat-form-field>
               <mat-label class="label input">Código</mat-label>
-              <input formControlName="codigo" class="input" matInput />
+              <input formControlName="id" class="input" matInput />
             </mat-form-field>
           </section>
         </section>
@@ -84,7 +84,9 @@
           </section>
         </section>
       </div>
-      <button (click)="onSubmit()" class="btn-action">
+      <button (click)="onSubmit()"
+      [disabled]="productForm.invalid"
+       class="btn-action">       
         {{ editProduct ? "Editar" : "Adicionar" }}
       </button>
     </form>

@@ -1,9 +1,9 @@
 {
   "products": [
     {
+      "id": "123abc",
       "name": "teclado",
       "brand": "razer",
-      "code": "123abc",
       "price": "200",
       "installment": [
         "2x",
@@ -14,13 +14,30 @@
       "urlImg": "https://images.unsplash.com/photo-1558050032-160f36233a07?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dGVjbGFkbyUyMG1lY2FuY298ZW58MHx8MHx8fDA%3D",
       "sale": "true",
       "promotionalPrice": "20"
+    },
+    {
+      "nome": "cadeira gamerr",
+      "marca": "dt3",
+      "codigo": "1213",
+      "preco": "500",
+      "parcelas": "/5",
+      "urlIMG": "https://www.google.com/search?q=cadeira+gamer&tbm=isch&ved=2ahUKEwjM7bu5w8uCAxV7tJUCHV_BBMoQ2-cCegQIABAA&oq=cadeira+gamer&gs_lcp=CgNpbWcQAzIICAAQgAQQsQMyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQ6CggAEIAEEIoFEEM6BAgAEB46BAgjECc6BAgAEAM6BwgjEOoCECc6CAgAELEDEIMBUKoEWOMUYNwVaAFwAHgBgAGLAYgByg2SAQQzLjEzmAEAoAEBqgELZ3dzLXdpei1pbWewAQrAAQE&sclient=img&ei=j55XZYzqFfvo1sQP34KT0Aw&bih=931&biw=1920&rlz=1C1CHZL_pt-BRBR1027BR1027#imgrc=9lOJm6V9gb5aCM",
+      "id": "8Xo1hAk"
+    },
+    {
+      "nome": "chinelo gamer",
+      "marca": "ipagamers",
+      "id": "555",
+      "preco": "200",
+      "parcelas": "/4",
+      "urlIMG": "https://www.google.com/search?q=cadeira+gamer&tbm=isch&ved=2ahUKEwjM7bu5w8uCAxV7tJUCHV_BBMoQ2-cCegQIABAA&oq=cadeira+gamer&gs_lcp=CgNpbWcQAzIICAAQgAQQsQMyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQ6CggAEIAEEIoFEEM6BAgAEB46BAgjECc6BAgAEAM6BwgjEOoCECc6CAgAELEDEIMBUKoEWOMUYNwVaAFwAHgBgAGLAYgByg2SAQQzLjEzmAEAoAEBqgELZ3dzLXdpei1pbWewAQrAAQE&sclient=img&ei=j55XZYzqFfvo1sQP34KT0Aw&bih=931&biw=1920&rlz=1C1CHZL_pt-BRBR1027BR1027#imgrc=9lOJm6V9gb5aCM"
     }
   ],
   "usuarios": [
     {
       "email": "c@gmail.com",
       "senha": "123",
-      "tipo": "ADMIN"    
+      "tipo": "ADMIN"
     }
   ]
 }
