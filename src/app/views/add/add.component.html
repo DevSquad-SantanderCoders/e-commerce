@@ -89,7 +89,9 @@
           </section>
         </section>
       </div>
-      <button (click)="onSubmit()" class="btn-action">
+      <button (click)="onSubmit()"
+      [disabled]="productForm.invalid"
+       class="btn-action">       
         {{ editProduct ? "Editar" : "Adicionar" }}
       </button>
     </form>

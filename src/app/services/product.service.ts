@@ -31,6 +31,5 @@ export class ProductService {
 
   deleteProducts(product: IProduct): Observable<any> {
     return this.http.delete(environment.URL + `/products/${product.code}`);
-
   }
 }
