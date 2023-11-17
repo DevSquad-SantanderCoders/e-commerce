@@ -21,6 +21,12 @@
       "email": "c@gmail.com",
       "senha": "123",
       "tipo": "ADMIN"    
+    },
+    {
+      "email": "peao@gmail.com",
+      "senha": "fakeadmin",
+      "tipo": "FUNCIONARIO"    
     }
+    
   ]
 }
