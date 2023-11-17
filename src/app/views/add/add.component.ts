@@ -60,7 +60,7 @@ export class AddComponent {
       this.serviceproduct
         .createProducts(this.productForm.value)
         .subscribe((res) => {
-          this.router.navigate(['/list']);
+          this.router.navigate(['/listarProdutos']);
         });
     }
   }
@@ -69,7 +69,7 @@ export class AddComponent {
     if (this.editProduct) {
       this.fecharModal.emit(true);
     } else {
-      this.router.navigate(['/list']);
+      this.router.navigate(['/listarProdutos']);
     }
   }
 
