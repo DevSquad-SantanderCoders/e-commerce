@@ -1,9 +1,9 @@
 {
   "products": [
     {
-      "id": "123abc",
-      "name": "teclado",
-      "brand": "razer",
+      "name": "tecldo4564165",
+      "brand": "razeraaaaaaa",
+      "id": 1,
       "price": "200",
       "installment": [
         "2x",
@@ -11,21 +11,19 @@
         "4x",
         "5x"
       ],
-      "urlImg": "https://images.unsplash.com/photo-1558050032-160f36233a07?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dGVjbGFkbyUyMG1lY2FuY298ZW58MHx8MHx8fDA%3D",
-      "sale": "true",
-      "promotionalPrice": "20"
+      "urlImg": "https://images.unsplash.com/photo-1558050032-160f36233a07?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dGVjbGFkbyUyMG1lY2FuY298ZW58MHx8MHx8fDA%3D"
     }
   ],
   "usuarios": [
     {
       "email": "c@gmail.com",
       "senha": "123",
-      "tipo": "ADMIN"    
+      "tipo": "ADMIN"
     },
     {
       "email": "peao@gmail.com",
       "senha": "fakeadmin",
-      "tipo": "FUNCIONARIO"    
+      "tipo": "FUNCIONARIO"
     }
   ]
 }
