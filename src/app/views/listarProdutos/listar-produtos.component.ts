@@ -4,6 +4,7 @@ import { DeleteProductFormComponent } from 'src/app/modais/delete-product-form/d
 import { EditProductFormComponent } from 'src/app/modais/edit-product-form/edit-product-form.component';
 import { IProduct } from 'src/app/models/product-data.model';
 import { ProductService } from 'src/app/services/product.service';
+import { RenderHeaderService } from 'src/app/services/render-header.service';
 
 @Component({
   selector: 'app-listar-produtos',
@@ -14,9 +15,11 @@ export class ListarProdutosComponent {
   products!: IProduct[];
   constructor(
     private serviceProducts: ProductService,
-    private dialog: MatDialog
+    private dialog: MatDialog,
+    private renderHeaderService: RenderHeaderService
   ) {
     this.getProducts();
+    this.renderHeaderService.setVariavel(true);
   }
 
   getProducts() {

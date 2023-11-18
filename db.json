@@ -1,17 +1,211 @@
 {
   "products": [
     {
-      "name": "tecldo4564165",
-      "brand": "razeraaaaaaa",
-      "id": 1,
-      "price": "200",
+      "name": "Teclado Sem Fio",
+      "brand": "Genérico",
+      "id": "f2e8cb0a-7bf1-4c1d-9428-82f53594b4e1",
+      "price": 50,
       "installment": [
         "2x",
         "3x",
         "4x",
         "5x"
       ],
-      "urlImg": "https://images.unsplash.com/photo-1558050032-160f36233a07?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dGVjbGFkbyUyMG1lY2FuY298ZW58MHx8MHx8fDA%3D"
+      "urlImg": "https://example.com/teclado.jpg"
+    },
+    {
+      "name": "Mouse Gamer",
+      "brand": "GamerZone",
+      "id": "a1b2c3d4-e5f6-7a8b-9c01-d2e3f4a5b6c7",
+      "price": 50,
+      "installment": "/4",
+      "urlImg": "https://example.com/mouse-gamer.jpg"
+    },
+    {
+      "name": "Monitor LED 24\"",
+      "brand": "DisplayMax",
+      "id": "12345678-90ab-cdef-1234-567890abcdef",
+      "price": 200,
+      "installment": "/3",
+      "urlImg": "https://example.com/monitor.jpg"
+    },
+    {
+      "name": "Caixas de Som 2.1",
+      "brand": "AudioPro",
+      "id": "a1b2c3d4-e5f6-7a8b-9c01-d2e3f4a5b6c7",
+      "price": 80,
+      "installment": [
+        "3x",
+        "4x"
+      ],
+      "urlImg": "https://example.com/caixas-de-som.jpg"
+    },
+    {
+      "name": "Webcam HD",
+      "brand": "CamTech",
+      "id": "f2e8cb0a-7bf1-4c1d-9428-82f53594b4e1",
+      "price": 60,
+      "installment": [
+        "2x",
+        "3x",
+        "4x"
+      ],
+      "urlImg": "https://example.com/webcam.jpg"
+    },
+    {
+      "name": "HD Externo 1TB",
+      "brand": "StorageMaster",
+      "id": "12345678-90ab-cdef-1234-567890abcdef",
+      "price": 120,
+      "installment": [
+        "4x",
+        "5x"
+      ],
+      "urlImg": "https://example.com/hd-externo.jpg"
+    },
+    {
+      "name": "Mousepad Gamer",
+      "brand": "GamerZone",
+      "id": "a1b2c3d4-e5f6-7a8b-9c01-d2e3f4a5b6c7",
+      "price": 15,
+      "installment": [
+        "2x",
+        "3x"
+      ],
+      "urlImg": "https://example.com/mousepad.jpg"
+    },
+    {
+      "name": "Impressora Multifuncional",
+      "brand": "PrintMaster",
+      "id": "f2e8cb0a-7bf1-4c1d-9428-82f53594b4e1",
+      "price": 150,
+      "installment": [
+        "3x",
+        "4x",
+        "5x"
+      ],
+      "urlImg": "https://example.com/impressora.jpg"
+    },
+    {
+      "name": "Hub USB 3.0",
+      "brand": "ConnectPro",
+      "id": "12345678-90ab-cdef-1234-567890abcdef",
+      "price": 20,
+      "installment": [
+        "2x"
+      ],
+      "urlImg": "https://example.com/hub-usb.jpg"
+    },
+    {
+      "name": "Teclado Mecânico RGB",
+      "brand": "GamerZone",
+      "id": "a1b2c3d4-e5f6-7a8b-9c01-d2e3f4a5b6c7",
+      "price": 80,
+      "installment": [
+        "3x",
+        "4x"
+      ],
+      "urlImg": "https://example.com/teclado-gamer.jpg"
+    },
+    {
+      "name": "Mouse Bluetooth",
+      "brand": "TechMaster",
+      "id": "f2e8cb0a-7bf1-4c1d-9428-82f53594b4e1",
+      "price": 35,
+      "installment": [
+        "2x",
+        "3x"
+      ],
+      "urlImg": "https://example.com/mouse-bluetooth.jpg"
+    },
+    {
+      "name": "Monitor Curvo 27\"",
+      "brand": "DisplayMax",
+      "id": "12345678-90ab-cdef-1234-567890abcdef",
+      "price": 300,
+      "installment": [
+        "4x",
+        "5x"
+      ],
+      "urlImg": "https://example.com/monitor-curvo.jpg"
+    },
+    {
+      "name": "Caixas de Som Bluetooth",
+      "brand": "AudioPro",
+      "id": "a1b2c3d4-e5f6-7a8b-9c01-d2e3f4a5b6c7",
+      "price": 100,
+      "installment": [
+        "3x",
+        "4x"
+      ],
+      "urlImg": "https://example.com/caixas-de-som-bluetooth.jpg"
+    },
+    {
+      "name": "Webcam Full HD",
+      "brand": "CamTech",
+      "id": "f2e8cb0a-7bf1-4c1d-9428-82f53594b4e1",
+      "price": 80,
+      "installment": [
+        "3x",
+        "4x",
+        "5x"
+      ],
+      "urlImg": "https://example.com/webcam-full-hd.jpg"
+    },
+    {
+      "name": "HD Externo 2TB",
+      "brand": "StorageMaster",
+      "id": "12345678-90ab-cdef-1234-567890abcdef",
+      "price": 180,
+      "installment": [
+        "4x",
+        "5x"
+      ],
+      "urlImg": "https://example.com/hd-externo-2tb.jpg"
+    },
+    {
+      "name": "Mouse Gamer",
+      "brand": "GamerZone",
+      "id": "a1b2c3d4-e5f6-7a8b-9c01-d2e3f4a5b6c7",
+      "price": 50,
+      "installment": [
+        "2x",
+        "3x"
+      ],
+      "urlImg": "https://example.com/mouse-gamer.jpg"
+    },
+    {
+      "name": "Impressora Laser",
+      "brand": "PrintMaster",
+      "id": "f2e8cb0a-7bf1-4c1d-9428-82f53594b4e1",
+      "price": 200,
+      "installment": [
+        "3x",
+        "4x",
+        "5x"
+      ],
+      "urlImg": "https://example.com/impressora-laser.jpg"
+    },
+    {
+      "name": "Hub USB-C",
+      "brand": "ConnectPro",
+      "id": "12345678-90ab-cdef-1234-567890abcdef",
+      "price": 30,
+      "installment": [
+        "2x"
+      ],
+      "urlImg": "https://example.com/hub-usb-c.jpg"
+    },
+    {
+      "name": "Teclado Ergonômico",
+      "brand": "Genérico",
+      "id": "a1b2c3d4-e5f6-7a8b-9c01-d2e3f4a5b6c7",
+      "price": 60,
+      "installment": [
+        "3x",
+        "4x"
+      ],
+      "urlImg": "https://example.com/teclado-ergonomico.jpg"
     }
   ],
   "usuarios": [

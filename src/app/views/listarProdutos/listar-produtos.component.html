@@ -1,4 +1,4 @@
-<app-header></app-header>
+
 <main class="products-list">
   <ng-container *ngFor="let product of products">
     <div class="product-item">
@@ -12,7 +12,7 @@
           </span>
           <span>
             Em até
-            {{ product.installment[product.installment.length - 1] }}X
+            {{ product.installment[product.installment.length - 1] }}
           </span>
         </div>
       </div>
@@ -37,4 +37,4 @@
     </div>
   </ng-container>
 </main>
-<app-footer></app-footer>
+

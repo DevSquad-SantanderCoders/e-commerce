@@ -3,14 +3,15 @@ import { Injectable } from '@angular/core';
 import { Observable, catchError, map, of } from 'rxjs';
 import { environment } from '../environment/environment';
 import { RefreshService } from './refresh.service';
+import { IUsuario } from '../models/IUsuario';
 
 
 @Injectable({
   providedIn: 'root'
 })
-export class AuthService {
+export class AuthenticationService {
 
-  private usuario?: Object;
+  private usuario?: any;
 
   constructor(private http: HttpClient,private refreshService: RefreshService) { }
 
@@ -40,20 +41,20 @@ export class AuthService {
   }
 
 
-  getToken(): any {
+  getToken(): number {
 
     return new Date().getTime()
     
   }
 
-  saveLogin(): boolean{
+  saveLogin(): string{
 
     const user = JSON.stringify(this.usuario)
     const token = JSON.stringify(this.getToken())
     localStorage.setItem('USER', user )
     localStorage.setItem('TIMETOKEN', token )
 
-    return true
+    return this.usuario.tipo
   }
 
   logout(): void{

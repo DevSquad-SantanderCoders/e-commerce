@@ -3,6 +3,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { IProduct } from 'src/app/models/product-data.model';
 import { ProductService } from 'src/app/services/product.service';
+import { RenderHeaderService } from 'src/app/services/render-header.service';
 
 @Component({
   selector: 'app-add',
@@ -20,11 +21,13 @@ export class AddComponent {
   constructor(
     private fb: FormBuilder,
     private serviceproduct: ProductService,
-    private router: Router
+    private router: Router,
+    private renderHeaderService: RenderHeaderService
   ) {
     this.serviceproduct.getProducts().subscribe((res) => {
       this.products = res;
     });
+    this.renderHeaderService.setVariavel(true);
   }
 
   ngOnInit() {
