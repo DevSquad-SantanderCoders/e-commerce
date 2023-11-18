@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { RenderHeaderService } from 'src/app/services/render-header.service';
 
 @Component({
   selector: 'app-home',
@@ -6,6 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent {
+
+  constructor(private renderHeaderService: RenderHeaderService){
+    this.renderHeaderService.setVariavel(true);
+  }
   products = [
     {
       name: 'mouse',

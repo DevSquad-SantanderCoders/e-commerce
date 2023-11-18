@@ -17,7 +17,7 @@ export class AuthGuard {
   constructor(
     private router: Router,
     private authorizationService: AuthorizationService
-  ) {}
+  ) { }
   canActivate(
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot
@@ -42,17 +42,24 @@ export class AuthGuard {
         );
         resolve(permission.permission);
 
-        const funcao = permission.callback;
-        if(funcao) funcao();
+        this.router.navigate([permission.rota]);
 
       } else {
         if (state.url === '/login') {
           resolve(true);
         } else {
           resolve(false);
-          this.authorizationService.backToLogin();
+          this.backToLogin();
         }
       }
     });
+  }
+
+  backToLogin() {
+    this.router.navigate(['/login']);
+  }
+
+  goToHome() {
+    this.router.navigate(['/']);
   }
 }

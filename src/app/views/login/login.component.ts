@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { AuthenticationService } from 'src/app/services/authentication.service';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { RenderHeaderService } from 'src/app/services/render-header.service';
 
 @Component({
   selector: 'app-login',
@@ -14,13 +15,17 @@ export class LoginComponent {
   constructor(
     private authService: AuthenticationService,
     private router: Router,
-    private fb: FormBuilder
+    private fb: FormBuilder,
+    private renderHeaderService: RenderHeaderService
   ) {
     this.login = this.fb.group({
       usuario: ['', Validators.required],
       senha: ['', Validators.required],
     });
+
+    this.renderHeaderService.setVariavel(false);
   }
+  userNotFound: boolean = false;
 
   Login() {
     if (this.login.valid) {
@@ -29,20 +34,22 @@ export class LoginComponent {
 
       this.authService.login(usuario, senha).subscribe((result) => {
         if (result) {
-          this.authService.saveLogin();
+          const tipo = this.authService.saveLogin();
+          if(tipo == 'ADMIN'){
+            this.renderHeaderService.setAdmin();
+          }else if(tipo == 'FUNCIONARIO'){
+            this.renderHeaderService.setFuncionario();
+          }
+          
           this.router.navigate(['/']);
         } else {
-          this.UserDontExist()
+          this.userNotFound = true;
           this.router.navigate(['/login']);
         }
       });
     } else {
       this.inputError()
     }
-  }
-
-  UserDontExist(): void {
-    this.login.get('usuario')?.setErrors({ 'Usuario não encontrado': true });
   }
 
   inputError():void {

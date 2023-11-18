@@ -6,12 +6,12 @@
           <span> PeriTech </span>
         </a>
         <ul>
-          <li>
+          <li *ngIf="renderizaAdicionarProduto">
             <a [routerLink]="['/add']">
               <mat-icon>add</mat-icon>
             </a>
           </li>
-          <li>
+          <li *ngIf="renderizaListaDeProdutos">
             <a [routerLink]="['/listarProdutos']">
               <mat-icon>computer</mat-icon>
             </a>
@@ -28,7 +28,7 @@
           </li>
         </ul>
         <div class="user">
-          <p>ADMIN</p>
+          <p *ngIf="renderizaTextoAdmin">ADMIN</p>
           <mat-icon class="log-icon" (click)="logout()">logout</mat-icon>
         </div>
       </nav>

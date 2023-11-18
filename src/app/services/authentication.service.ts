@@ -11,7 +11,7 @@ import { IUsuario } from '../models/IUsuario';
 })
 export class AuthenticationService {
 
-  private usuario?: IUsuario;
+  private usuario?: any;
 
   constructor(private http: HttpClient,private refreshService: RefreshService) { }
 
@@ -19,7 +19,7 @@ export class AuthenticationService {
 
     return this.http.get(environment.URL + '/usuarios').pipe(
       map((listaDeUsuarios: any) => {
-        const usuarioExiste = listaDeUsuarios.find((usuario: IUsuario) => ((usuario.email == user) && (usuario.senha == password)))
+        const usuarioExiste = listaDeUsuarios.find((usuario: any) => ((usuario.email == user) && (usuario.senha == password)))
 
         if (usuarioExiste) {
 
@@ -47,14 +47,14 @@ export class AuthenticationService {
     
   }
 
-  saveLogin(): boolean{
+  saveLogin(): string{
 
     const user = JSON.stringify(this.usuario)
     const token = JSON.stringify(this.getToken())
     localStorage.setItem('USER', user )
     localStorage.setItem('TIMETOKEN', token )
 
-    return true
+    return this.usuario.tipo
   }
 
   logout(): void{

@@ -15,7 +15,7 @@ export class AuthorizationService {
         if (usuarioAutenticado.tipo === 'ADMIN') {
           return {permission: true};
         } else {
-          return {permission: false, callback: this.backToLogin};  
+          return {permission: false, rota: '/login'};  
         }
         
       case '/listarProdutos':
@@ -23,24 +23,20 @@ export class AuthorizationService {
           usuarioAutenticado.tipo === 'ADMIN' ||
           usuarioAutenticado.tipo === 'FUNCIONARIO'
         ) {
+          
           return {permission: true};
         } else {
-          return {permission: false, callback: this.backToLogin};
+          
+          return {permission: false, rota: '/login'};
         }
         
 
       case '/login':
-        return {permission: false, callback: this.goToHome};
+        return {permission: false, rota: '/'};
       default:
-        return {permission: false, callback: this.goToHome};
+        return {permission: false, rota: '/'};
     }
   }
 
-  backToLogin(){
-    this.router.navigate(['/login']);
-  }
-
-  goToHome() {
-    this.router.navigate(['/']);
-  }
+  
 }

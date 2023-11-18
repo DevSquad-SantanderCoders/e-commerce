@@ -3,32 +3,17 @@
     <mat-card-content>
       <form [formGroup]="login">
         <h2>Log In</h2>
-        <mat-error
-          *ngIf="this.login.get('usuario')?.hasError('Usuario não encontrado')"
-        >
+        <mat-error *ngIf="userNotFound">
           Usuario não encontrado no sistema!
         </mat-error>
         <mat-error *ngIf="this.login.get('usuario')?.hasError('wrongInput')">
           Preencha os campos corretamente
         </mat-error>
         <mat-form-field>
-          <input
-            matInput
-            placeholder="Email"
-            name="username"
-            formControlName="usuario"
-            required
-          />
+          <input matInput placeholder="Email" name="username" formControlName="usuario" required />
         </mat-form-field>
         <mat-form-field>
-          <input
-            matInput
-            type="password"
-            placeholder="Password"
-            name="password"
-            formControlName="senha"
-            required
-          />
+          <input matInput type="password" placeholder="Password" name="password" formControlName="senha" required />
         </mat-form-field>
         <button mat-raised-button color="primary" (click)="Login()">
           Login
