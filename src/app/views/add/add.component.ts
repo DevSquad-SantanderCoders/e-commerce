@@ -42,11 +42,11 @@ export class AddComponent {
       ],
       brand: [
         product?.brand ?? '',
-        [Validators.required],
+        [Validators.required, Validators.minLength(2)],
       ],
       id: [
         { value: product?.id ?? '', disabled: this.editProduct },
-        [Validators.required, Validators.minLength(3)],
+        [Validators.required],
       ],
       price: [product?.price ?? '', [Validators.required]],
       installment: [product?.installment ?? '', [Validators.required]],
