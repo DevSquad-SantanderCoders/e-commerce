@@ -2,7 +2,7 @@
 
 .carousel  {
   height: 40vh;
-  width: 100%;
+  width: 100vw;
 }
 
 .carousel-item {
@@ -14,7 +14,7 @@
 
 .picsum-img-wrapper{
   height: 40vh;
-  width: 100%;
+  width: inherit;
 }
 
 img {
@@ -53,30 +53,37 @@ div.carousel-indicators{
   font-size: 11px;
 }
 
-@media only screen and (max-width: 550px) and (min-width: 500px){
+@media only screen and (min-width: 800px) and (max-width: 1100px) {
 
+  .carousel {
+    width: 90vw;
+    height: 350px;
+  }
+
+  .picsum-img-wrapper{
+    height: 340px;
+  }
   .carousel-caption p  {
-    font-size: 15px;
+    font-size: 14px;
   }
   .carousel-caption h3  {
     font-size: 28px ;
   }
 }
+@media only screen and (min-width: 1100px) and (max-width: 1920px){
 
+  .carousel {
+    width: 80vw;
+    height: 350px;
+  }
 
-@media only screen and (max-width: 1024px) and (min-width: 550px)  {
+  .picsum-img-wrapper{
+    height: 340px;
+  }
   .carousel-caption p  {
-    font-size: 20px;
+    font-size: 16px;
   }
   .carousel-caption h3  {
-    font-size: 37px ;
-  }
-}
-@media only screen and (max-width: 1280px) and (min-width: 1024px)  {
-  .carousel-caption p  {
-    font-size: 22px;
-  }
-  .carousel-caption h3  {
-    font-size: 45px ;
+    font-size: 30px ;
   }
 }

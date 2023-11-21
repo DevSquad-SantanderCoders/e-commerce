@@ -9,10 +9,11 @@ $tech-text: 'Orbitron', sans-serif;
 $product-text: 'Oswald', sans-serif;
 $secondary-blue: #569be5;
 $opaque-blue: #569be5bf;
+$bg-main: #e7e7e7;
 html,
 body {
     height: 100%;
-    background: radial-gradient(ellipse at center, #6644A6 0%, #E4DEF7 0%, #6644A6 100%);
+    background-color: #550b5c !important;
     overflow-x: hidden;
 }
 

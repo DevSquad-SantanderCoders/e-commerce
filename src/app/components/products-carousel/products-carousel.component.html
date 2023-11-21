@@ -1,0 +1,37 @@
+<section class="product-carousel-container pt-4 gap-3">
+  <p-carousel
+    [value]="products.slice(0, 8)"
+    [numVisible]="4"
+    [numScroll]="1"
+    [circular]="false"
+    [responsiveOptions]="responsiveOptions"
+  >
+    <ng-template pTemplate="header">
+      <h2 class="text-center fw-bold products-title">Produtos em Destaque</h2>
+    </ng-template>
+    <ng-template let-product pTemplate="item">
+      <div class="product-item">
+        <div class="product-item-content">
+          <div class="p-mb-3"></div>
+          <div class="product-infos">
+            <span class="offer-text">Oferta</span>
+            <img src="{{ product.urlImg }}" />
+            <h4 class="pt-2 fw-bold">{{ product.name }}</h4>
+            <h5>{{ product.brand }}</h5>
+            <div
+              class="price-product d-flex flex-column align-start w-100 px-4"
+            >
+              <h6 class="fw-bolder fs-4">
+                {{ product.price | currency : "BRL" }}
+              </h6>
+              <p class="fw-light fs-6 text-start text-secondary">
+                À vista no PIX
+              </p>
+              <hr class="hr hr-blurry" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+  </p-carousel>
+</section>

@@ -1,67 +1,10 @@
 @import '../../../styles.scss';
 
+
 .main {
   width: 100vw;
-  height: 600px;
-  overflow-y: auto;
-
-}
-.products-wrapper {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 100%;
-  gap: 20px;
-  padding: 20px 15px;
-
-}
-.products {
-  padding: 25px;
-}
-
-.products h3 {
-  text-align: center;
-  font-family: $tech-text;
-  color:$primary-color;
-  font-weight: 800;
-  margin-bottom: 20px;
-
-}
-
-.product-item {
+  height: calc(100vh + 660px);
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  font-family: $product-text;
-  // border: solid 2px saddlebrown;
-}
-
-.product-item img {
-  border-radius: 50%;
-  height: 150px;
-  width: 150px;
-  object-fit: cover;
-}
-
-.infos-product {
-  display: flex;
-  flex-direction: column;
-
-}
-.infos-product h4 {
-  text-transform: capitalize;
-  text-align: center;
-  font-family: $product-text;
-  color: $tertiary-color;
-  font-size: 15px;
-}
-
-.infos-price-product{
-  display: flex;
-  justify-content: space-around;
-}
-
-.infos-price-product span {
-  font-size: 12px;
-
+  align-items: center;
 }

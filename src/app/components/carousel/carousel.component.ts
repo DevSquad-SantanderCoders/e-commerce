@@ -14,19 +14,19 @@ export class CarouselComponent {
   images = [
     {
       id: 0,
-      src: '../../../assets/carousel-1.jpg',
+      src: '../../../assets/teste-1.jpg',
       title: 'Potencialize sua experiência',
       subtitle: 'Encontre os melhores periféricos para o seu setup.',
     },
     {
       id: 1,
-      src: '../../../assets/carousel-2.jpg',
+      src: '../../../assets/teste-2.jpg',
       title: 'Explore a próxima geração de periféricos',
       subtitle: 'Qualidade e desempenho em um só lugar.',
     },
     {
       id: 2,
-      src: '../../../assets/carousel-3.jpg',
+      src: '../../../assets/teste-3.avif',
       title: 'Faça cada clique contar ',
       subtitle:
         'Descubra nossos periféricos ergonomicamente projetados para longas sessões de uso.',
