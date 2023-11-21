@@ -1,0 +1,56 @@
+@import '../../../styles.scss';
+
+.multicontainer {
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  background-color: $bg-main;
+  padding: 30px 0;
+}
+
+.container-item {
+  background-color: $primary-color;
+  display: flex;
+  width: 350px;
+}
+
+.container-icon {
+  padding: 15px;
+}
+
+.container-icon img {
+  width: 60px;
+}
+
+.container-text {
+  background-color: $opaque-blue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  & h4, span {
+    color: $primary-color;
+  }
+}
+
+@media only screen and (min-width: 1360px) and (max-width: 1980px) {
+  .multicontainer {
+    width: 80vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 1em;
+    justify-items: center;
+  padding: 40px;
+
+
+  }
+
+  .container-item {
+    width: 100%;
+  }
+
+}

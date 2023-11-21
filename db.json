@@ -11,7 +11,7 @@
         "4x",
         "5x"
       ],
-      "urlImg": "https://example.com/teclado.jpg"
+      "urlImg": "https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?w=200&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHRlY2xhZG98ZW58MHx8MHx8fDA%3D"
     },
     {
       "name": "Mouse Gamer",
@@ -19,7 +19,7 @@
       "id": "a1b2c3d4-e5f6-7a8b-9c01-d2e3f4a5b6c7",
       "price": 50,
       "installment": "/4",
-      "urlImg": "https://example.com/mouse-gamer.jpg"
+      "urlImg": "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?w=200&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bW91c2V8ZW58MHx8MHx8fDA%3D"
     },
     {
       "name": "Monitor LED 24\"",
@@ -27,7 +27,7 @@
       "id": "12345678-90ab-cdef-1234-567890abcdef",
       "price": 200,
       "installment": "/3",
-      "urlImg": "https://example.com/monitor.jpg"
+      "urlImg": "https://images.unsplash.com/photo-1509718443690-d8e2fb3474b7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
       "name": "Caixas de Som 2.1",
@@ -38,7 +38,7 @@
         "3x",
         "4x"
       ],
-      "urlImg": "https://example.com/caixas-de-som.jpg"
+      "urlImg": "https://images.unsplash.com/photo-1612241143917-d05c85c43751?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y2FpeGFzJTIwZGUlMjBzb218ZW58MHwwfDB8fHww"
     },
     {
       "name": "Webcam HD",
@@ -50,7 +50,7 @@
         "3x",
         "4x"
       ],
-      "urlImg": "https://example.com/webcam.jpg"
+      "urlImg": "https://images.unsplash.com/photo-1629429407756-446d66f5b24e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8d2ViY2FtJTIwaGR8ZW58MHwwfDB8fHww"
     },
     {
       "name": "HD Externo 1TB",
@@ -61,7 +61,7 @@
         "4x",
         "5x"
       ],
-      "urlImg": "https://example.com/hd-externo.jpg"
+      "urlImg": "https://images.unsplash.com/photo-1601737487795-dab272f52420?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8aGQlMjBleHRlcm5vfGVufDB8MHwwfHx8MA%3D%3D"
     },
     {
       "name": "Mousepad Gamer",
@@ -72,7 +72,7 @@
         "2x",
         "3x"
       ],
-      "urlImg": "https://example.com/mousepad.jpg"
+      "urlImg": "https://images.unsplash.com/photo-1631098985305-d57413e94950?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
       "name": "Impressora Multifuncional",
@@ -84,7 +84,7 @@
         "4x",
         "5x"
       ],
-      "urlImg": "https://example.com/impressora.jpg"
+      "urlImg": "https://images.unsplash.com/photo-1612815154858-60aa4c59eaa6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
       "name": "Hub USB 3.0",
@@ -94,7 +94,7 @@
       "installment": [
         "2x"
       ],
-      "urlImg": "https://example.com/hub-usb.jpg"
+      "urlImg": "https://img.freepik.com/fotos-gratis/dispositivo-digital-hubs-usb_53876-96823.jpg?w=1380&t=st=1700518915~exp=1700519515~hmac=acecc6ae84e68570cd9b970ee9c43c7c824a5f4ef27b168e0726b51175e19a7f"
     },
     {
       "name": "Teclado Mecânico RGB",
@@ -105,7 +105,7 @@
         "3x",
         "4x"
       ],
-      "urlImg": "https://example.com/teclado-gamer.jpg"
+      "urlImg": "https://images.unsplash.com/photo-1616933067921-11096044e304?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzV8fHRlY2xhZG8lMjBtZWNhbmljb3xlbnwwfDB8MHx8fDA%3D"
     },
     {
       "name": "Mouse Bluetooth",
@@ -116,7 +116,7 @@
         "2x",
         "3x"
       ],
-      "urlImg": "https://example.com/mouse-bluetooth.jpg"
+      "urlImg": "https://images.unsplash.com/photo-1662371893881-1b2fae8e4304?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bW91c2UlMjBibHVldG9vdGh8ZW58MHwwfDB8fHww"
     },
     {
       "name": "Monitor Curvo 27\"",
@@ -127,7 +127,7 @@
         "4x",
         "5x"
       ],
-      "urlImg": "https://example.com/monitor-curvo.jpg"
+      "urlImg": "https://img.freepik.com/psd-gratuitas/maquete-de-tv-curvada_1310-610.jpg?size=626&ext=jpg&ga=GA1.1.640842567.1697948259&semt=ais"
     },
     {
       "name": "Caixas de Som Bluetooth",
@@ -138,7 +138,7 @@
         "3x",
         "4x"
       ],
-      "urlImg": "https://example.com/caixas-de-som-bluetooth.jpg"
+      "urlImg": "https://img.freepik.com/fotos-gratis/homem-usando-um-alto-falante-inteligente_23-2149036843.jpg?w=1380&t=st=1700519058~exp=1700519658~hmac=73abafb13ecb4f4c16e8a0a25e4e62a87637ca07d10e7a93ea9775f26ffe09e4"
     },
     {
       "name": "Webcam Full HD",
@@ -150,7 +150,7 @@
         "4x",
         "5x"
       ],
-      "urlImg": "https://example.com/webcam-full-hd.jpg"
+      "urlImg": "https://images.unsplash.com/photo-1670278458254-0df3f72ab093?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8d2ViY2FtJTIwZnVsbCUyMGhkfGVufDB8MHwwfHx8MA%3D%3D"
     },
     {
       "name": "HD Externo 2TB",
@@ -161,7 +161,7 @@
         "4x",
         "5x"
       ],
-      "urlImg": "https://example.com/hd-externo-2tb.jpg"
+      "urlImg": "https://img.freepik.com/fotos-gratis/vista-superior-ssd-e-laptop-na-mesa_23-2149328234.jpg?size=626&ext=jpg&ga=GA1.1.640842567.1697948259&semt=ais"
     },
     {
       "name": "Mouse Gamer",
@@ -172,7 +172,7 @@
         "2x",
         "3x"
       ],
-      "urlImg": "https://example.com/mouse-gamer.jpg"
+      "urlImg": "https://img.freepik.com/fotos-gratis/vista-da-configuracao-da-mesa-de-jogos-iluminada-a-neon-com-teclado_23-2149529362.jpg?size=626&ext=jpg&ga=GA1.1.640842567.1697948259&semt=ais"
     },
     {
       "name": "Impressora Laser",
@@ -184,7 +184,7 @@
         "4x",
         "5x"
       ],
-      "urlImg": "https://example.com/impressora-laser.jpg"
+      "urlImg": "https://img.freepik.com/fotos-gratis/composicao-da-impressora-de-natureza-morta-de-vista-superior_23-2149120739.jpg?size=626&ext=jpg&ga=GA1.1.640842567.1697948259&semt=ais"
     },
     {
       "name": "Hub USB-C",
@@ -194,7 +194,7 @@
       "installment": [
         "2x"
       ],
-      "urlImg": "https://example.com/hub-usb-c.jpg"
+      "urlImg": "https://img.freepik.com/fotos-gratis/close-up-de-um-pequeno-banco-de-pavimentacao-branca_169016-15153.jpg?size=626&ext=jpg&ga=GA1.1.640842567.1697948259&semt=ais"
     },
     {
       "name": "Teclado Ergonômico",
@@ -205,7 +205,7 @@
         "3x",
         "4x"
       ],
-      "urlImg": "https://example.com/teclado-ergonomico.jpg"
+      "urlImg": "https://img.freepik.com/fotos-gratis/conceito-de-mesa-vista-superior-com-teclado_23-2148604913.jpg?size=626&ext=jpg&ga=GA1.1.640842567.1697948259&semt=ais"
     }
   ],
   "usuarios": [

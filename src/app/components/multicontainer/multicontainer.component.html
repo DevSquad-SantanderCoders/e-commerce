@@ -1,0 +1,13 @@
+<section class="multicontainer">
+  <ng-container *ngFor="let container of containers">
+    <div class="container-item">
+      <div class="container-icon">
+        <img src="{{ container.icon }}" alt="" />
+      </div>
+      <div class="container-text">
+        <h4>{{ container.title }}</h4>
+        <span>{{ container.description }}</span>
+      </div>
+    </div>
+  </ng-container>
+</section>

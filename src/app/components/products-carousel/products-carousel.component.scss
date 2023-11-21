@@ -1,0 +1,70 @@
+
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+@import '../../../styles.scss';
+
+.product-carousel-container {
+  width: 80vw;
+  background-color: $bg-main;
+}
+
+.products-title {
+  color: $secondary-color;
+  text-transform: uppercase;
+  font-family: $tech-text;
+  font-size: 20px;
+}
+
+.product-item {
+
+  .product-item-content {
+      border-radius: 3px;
+      margin: .3rem;
+      padding: 2rem 0;
+  }
+
+  .product-infos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .offer-text {
+    background-color: $primary-color;
+    color: $primary-grey;
+    animation: blink 1s infinite;
+    padding: 1px 30px;
+    border-radius: 200px;
+    width: fit-content;
+
+  }
+
+  .product-infos > h4, .price-product h6 {
+      color: $primary-color;
+
+  }
+   img {
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+    &:hover {
+      filter: grayscale(1) ;
+      cursor: crosshair;
+    }
+  }
+}
+
+@keyframes blink {
+  0%{
+    opacity: 1;
+  }
+  50%{
+    opacity: 0;
+  }
+}
+
+@media only screen and (min-width: 1100px) and (max-width: 1920px) {
+  .products-title {
+    font-size: 28px;
+  }
+}
