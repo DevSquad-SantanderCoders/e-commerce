@@ -58,8 +58,8 @@ export class AuthenticationService {
   }
 
   logout(): void{
-    localStorage.removeItem('USER')
-    localStorage.removeItem('TIMETOKEN')
+    localStorage.setItem('USER', '')
+    localStorage.setItem('TIMETOKEN','')
     this.refreshService.refresh();
   }
 

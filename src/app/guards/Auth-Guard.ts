@@ -18,6 +18,7 @@ export class AuthGuard {
     private router: Router,
     private authorizationService: AuthorizationService
   ) { }
+
   canActivate(
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot
@@ -33,7 +34,7 @@ export class AuthGuard {
       const tempoToken = JSON.parse(
         localStorage.getItem('TIMETOKEN') || 'null'
       );
-      const tokenExpirado = new Date().getTime() - tempoToken <= 200000;
+      const tokenExpirado = new Date().getTime() - tempoToken <= 2000000;
 
       if (usuarioAutenticado && tokenExpirado) {
         const permission = this.authorizationService.hasRoutePermission(
@@ -45,9 +46,9 @@ export class AuthGuard {
         this.router.navigate([permission.rota]);
 
       } else {
-        if (state.url === '/login') {
+        if (state.url === '/login') {          
           resolve(true);
-        } else {
+        } else {          
           resolve(false);
           this.backToLogin();
         }
