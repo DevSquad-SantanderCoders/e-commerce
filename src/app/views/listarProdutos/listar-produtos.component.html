@@ -27,6 +27,7 @@
           Editar
         </button>
         <button
+        *ngIf="renderizaBotaoDelete"
           mat-flat-button
           color="danger"
           (click)="openDialogDeleteProduct(product)"

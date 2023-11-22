@@ -15,20 +15,23 @@ export class DeleteProductFormComponent {
     public dialogRef: MatDialogRef<DeleteProductFormComponent>,
     @Inject(MAT_DIALOG_DATA) public data: any
   ) {
+    console.log(data);
     this.currentProduct = this.data;
   }
   public onCancel(): void {
     this.actionCompleted = true;
     this.notExcludedProduct = true;
-    setTimeout(() => {
-      this.dialogRef.close(false);
-    }, 1500);
+    this.dialogRef.close(false);
+    // setTimeout(() => {
+     
+    // }, 1500);
   }
 
   deleteProduct(): void {
     this.actionCompleted = true;
-    setTimeout(() => {
-      this.dialogRef.close(true);
-    }, 1500);
+    this.dialogRef.close(true);
+    // setTimeout(() => {
+      
+    // }, 1500);
   }
 }

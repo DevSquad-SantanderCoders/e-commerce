@@ -18,7 +18,7 @@
           </li>
           <li>
             <a>
-              <mat-icon>people</mat-icon>
+              <mat-icon>store</mat-icon>
             </a>
           </li>
           <li>
@@ -29,7 +29,8 @@
         </ul>
         <div class="user">
           <p *ngIf="renderizaTextoAdmin">ADMIN</p>
-          <mat-icon class="log-icon" (click)="logout()">logout</mat-icon>
+          <mat-icon *ngIf="!renderizaLogin" class="log-icon" (click)="logout()">logout</mat-icon>
+          <a href="/login" *ngIf="renderizaLogin">Login</a>
         </div>
       </nav>
     </mat-toolbar-row>

@@ -1,5 +1,7 @@
+import { Guid } from "guid-ts";
+
 export interface IProduct {
-  id: number;
+  id: Guid;
   name: string;
   brand: string;
   price: number;

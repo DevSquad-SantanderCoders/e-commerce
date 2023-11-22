@@ -46,7 +46,7 @@
    img {
     width: 250px;
     height: 250px;
-    border-radius: 20px;
+    object-fit: contain;
     &:hover {
       filter: grayscale(1) ;
       cursor: crosshair;
