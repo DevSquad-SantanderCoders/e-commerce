@@ -13,6 +13,7 @@ export class HeaderComponent {
    renderizaTextoAdmin: boolean = false;
    renderizaListaDeProdutos: boolean = false;
    renderizaAdicionarProduto: boolean = false;
+   renderizaLogin: boolean = true;
   
   private subscription: Subscription = new Subscription;
 
@@ -34,16 +35,19 @@ export class HeaderComponent {
         this.renderizaAdicionarProduto = true;
         this.renderizaListaDeProdutos = true;
         this.renderizaTextoAdmin = true;
+        this.renderizaLogin = false;
         break;
       case 'FUNCIONARIO':
         this.renderizaAdicionarProduto = false;
         this.renderizaListaDeProdutos = true;
         this.renderizaTextoAdmin = false;
+        this.renderizaLogin = false;
         break;
       default:
         this.renderizaAdicionarProduto = false;
         this.renderizaListaDeProdutos = false;
         this.renderizaTextoAdmin = false;
+        this.renderizaLogin = true;
     }
     
   }

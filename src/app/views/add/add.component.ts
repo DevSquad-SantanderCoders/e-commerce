@@ -49,7 +49,7 @@ export class AddComponent {
         [Validators.required],
       ],
       price: [product?.price ?? '', [Validators.required]],
-      installment: [product?.installment ?? '', [Validators.required]],
+      installment: [product?.installment ?? '', [Validators.required, Validators.max(5), Validators.min(2), Validators.minLength(1), Validators.maxLength(1)]],
       urlImg: [product?.urlImg ?? '', [Validators.required]],
     });
   }

@@ -66,12 +66,7 @@
             <mat-icon class="icon">credit_card</mat-icon>
             <mat-form-field>
               <mat-label class="label input">Parcelamento</mat-label>
-              <mat-select formControlName="installment" class="input">
-                <mat-option value="/2">2x</mat-option>
-                <mat-option value="/3">3x</mat-option>
-                <mat-option value="/4">4x</mat-option>
-                <mat-option value="/5">5x</mat-option>
-              </mat-select>
+              <input formControlName="installment" [value]="2" type="number" maxlength="1" min="2" max="5" class="input" matInput />
             </mat-form-field>
           </section>
 
