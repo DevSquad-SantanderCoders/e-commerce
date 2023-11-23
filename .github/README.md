@@ -69,7 +69,7 @@ ng serve
    <h3> Add Product Form </h3>
    <img  width='600' src='./image-5.png'>
    <h3> Product Listing Page - ADMIN </h3>
-   <img  width='600' src='./imag-6.png'>
+   <img  width='600' src='./image-6.png'>
    <h3> Product Listing Page - FUNCIONARIO  </h3>
    <img  width='600' src='./image-7.png'>
    <h3> Dialog Edit - ADMIN </h3>
