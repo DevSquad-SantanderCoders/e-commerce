@@ -9,14 +9,19 @@ import {
 
 import { Observable } from 'rxjs';
 import { AuthorizationService } from '../services/authorization.service';
+import { StatusLoginService } from '../services/status-login.service';
 
 @Injectable({
   providedIn: 'root',
 })
 export class AuthGuard {
+
+  tempoMaximoLogado: number = 60000;
+
   constructor(
     private router: Router,
-    private authorizationService: AuthorizationService
+    private authorizationService: AuthorizationService,
+    private statusLoginService: StatusLoginService
   ) { }
 
   canActivate(
@@ -28,31 +33,34 @@ export class AuthGuard {
     | boolean
     | UrlTree {
     return new Promise((resolve, reject) => {
-      const usuarioAutenticado = JSON.parse(
-        localStorage.getItem('USER') || 'null'
-      );
-      const tempoToken = JSON.parse(
-        localStorage.getItem('TIMETOKEN') || 'null'
-      );
-      const tokenExpirado = new Date().getTime() - tempoToken <= 2000000;
+      
+      const usuarioLogado = this.statusLoginService.getStatus();
 
-      if (usuarioAutenticado && tokenExpirado) {
+      if (usuarioLogado.condicao) {
         const permission = this.authorizationService.hasRoutePermission(
           state,
-          usuarioAutenticado
+          usuarioLogado.usuario
         );
-        resolve(permission.permission);
 
-        this.router.navigate([permission.rota]);
-
-      } else {
-        if (state.url === '/login') {          
+        if (permission.permission) {
           resolve(true);
-        } else {          
+          setTimeout(() => {
+            this.backToLogin()
+          }, this.tempoMaximoLogado);
+
+          this.router.navigate([permission.rota]);
+        } else {
           resolve(false);
-          this.backToLogin();
+          this.router.navigate([permission.rota]);
         }
+
+      } else if (state.url === '/login') {
+        resolve(true);
+      } else {
+        resolve(false);
+        this.backToLogin();
       }
+
     });
   }
 

@@ -9,5 +9,6 @@ import { RenderHeaderService } from 'src/app/services/render-header.service';
 export class HomeComponent {
   constructor(private renderHeaderService: RenderHeaderService) {
     this.renderHeaderService.setVariavel(true);
+    console.log("entrou")
   }
 }

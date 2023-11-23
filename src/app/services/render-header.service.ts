@@ -1,17 +1,21 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable } from 'rxjs';
+import { StatusLoginService } from './status-login.service';
 
 @Injectable({
   providedIn: 'root'
 })
 export class RenderHeaderService {
 
-  constructor() { }
-
   private variavelMonitorada = new BehaviorSubject<boolean>(false);
 
   private funcaoMonitorada = new BehaviorSubject<string>("");
 
+  constructor() {
+    
+  }
+
+  
   setVariavel(valor: boolean) {
     this.variavelMonitorada.next(valor);
   }

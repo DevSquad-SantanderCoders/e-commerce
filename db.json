@@ -34,23 +34,16 @@
       "brand": "AudioPro",
       "id": "a3a6898d-c69c-4b8c-a37b-350f6c385223",
       "price": 80,
-      "installment": [
-        "3x",
-        "4x"
-      ],
+      "installment": 2,
       "urlImg": "https://images.unsplash.com/photo-1612241143917-d05c85c43751?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y2FpeGFzJTIwZGUlMjBzb218ZW58MHwwfDB8fHww"
     },
     {
-      "name": "Webcam HD",
+      "name": "Webcam",
       "brand": "CamTech",
-      "id": "11e75eb3-2913-4b3a-b1a7-8618cc04801c",
       "price": 60,
-      "installment": [
-        "2x",
-        "3x",
-        "4x"
-      ],
-      "urlImg": "https://images.unsplash.com/photo-1629429407756-446d66f5b24e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8d2ViY2FtJTIwaGR8ZW58MHwwfDB8fHww"
+      "installment": 2,
+      "urlImg": "https://images.unsplash.com/photo-1629429407756-446d66f5b24e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8d2ViY2FtJTIwaGR8ZW58MHwwfDB8fHww",
+      "id": "11e75eb3-2913-4b3a-b1a7-8618cc04801c"
     },
     {
       "name": "HD Externo 1TB",
@@ -62,17 +55,6 @@
         "5x"
       ],
       "urlImg": "https://images.unsplash.com/photo-1601737487795-dab272f52420?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8aGQlMjBleHRlcm5vfGVufDB8MHwwfHx8MA%3D%3D"
-    },
-    {
-      "name": "Mousepad Gamer",
-      "brand": "GamerZone",
-      "id": "1fb2b925-5db4-4c23-b66a-ee2454027dd9",
-      "price": 15,
-      "installment": [
-        "2x",
-        "3x"
-      ],
-      "urlImg": "https://images.unsplash.com/photo-1631098985305-d57413e94950?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
       "name": "Impressora Multifuncional",
@@ -206,7 +188,7 @@
         "4x"
       ],
       "urlImg": "https://example.com/teclado-ergonomico.jpg"
-    }    
+    }
   ],
   "usuarios": [
     {

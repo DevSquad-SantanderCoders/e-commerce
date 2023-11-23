@@ -62,6 +62,7 @@ export class ListarProdutosComponent {
   }
 
   openDialogEditProduct(product: IProduct) {
+    
     const dialogRef = this.dialog.open(EditProductFormComponent, {
       disableClose: true,
       width: '100%',
