@@ -32,10 +32,10 @@
     {
       "name": "Caixas de Som 2.1",
       "brand": "AudioPro",
-      "id": "a3a6898d-c69c-4b8c-a37b-350f6c385223",
       "price": 80,
       "installment": 2,
-      "urlImg": "https://images.unsplash.com/photo-1612241143917-d05c85c43751?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y2FpeGFzJTIwZGUlMjBzb218ZW58MHwwfDB8fHww"
+      "urlImg": "https://images.unsplash.com/photo-1612241143917-d05c85c43751?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y2FpeGFzJTIwZGUlMjBzb218ZW58MHwwfDB8fHww",
+      "id": "a3a6898d-c69c-4b8c-a37b-350f6c385223"
     },
     {
       "name": "Webcam",
